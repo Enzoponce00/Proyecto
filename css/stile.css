@@ -71,3 +71,79 @@ h1 {color: goldenrod;font-size: 1.8rem; text-align: center; padding-top: 55px;}
 .ft-item a{
     color: white;
 }
+.partidos{
+    background-color: aqua;
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*grilla de grupo*/
+.grupo{
+    background-color: greenyellow;
+    height: 130px;
+    width: 200px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.gp{
+    grid-area: grupo;
+    text-align: center;
+}
+.nombres{
+    grid-area: nombres;
+    text-align: left;
+    padding: 3px;
+}
+.estadisticas{
+    grid-area: estadisticas;
+}
+
+/*.tarjeta{
+    display: flex;
+    flex-direction: column;
+}*/
+.info{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+label i{ font-size: 1.8rem;}
+#grupo-a:checked ~ .inf-a {display:grid;}
+#grupo-a:checked ~ .tarjeta-a {
+    background-color: greenyellow;
+    height: 130px;
+    width: 300px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas estadisticas"
+    "nombres estadisticas estadisticas"
+    "nombres estadisticas estadisticas"
+    "nombres estadisticas estadisticas"
+    "nombres estadisticas estadisticas"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+#grupo-b:checked ~ .inf-b {display:grid;}
+#grupo-c:checked ~ .inf-c {display:grid;}
+#grupo-d:checked ~ .inf-d {display:grid;}
+#grupo-e:checked ~ .inf-e {display:grid;}
+#grupo-f:checked ~ .inf-f {display:grid;}
+#grupo-g:checked ~ .inf-g {display:grid;}
+#grupo-h:checked ~ .inf-h {display:grid;}
+.esconder{ display: none;}
