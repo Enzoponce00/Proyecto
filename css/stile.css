@@ -1,10 +1,10 @@
 /* !important >id >class >etiqueta */
 *{margin: 0px; text-decoration: none;}
+
 body{font-family: Helvetica, sans-serif;background-color: rgb(0, 0, 0); color :white;}
 h1 {color: goldenrod;font-size: 1.8rem; text-align: center; padding-top: 55px;}
 .titulo{position: relative;margin-bottom: 50px;}
 .nav{
-    background-color: black;
     border-bottom: 10px solid goldenrod; width: 550px; height: 40px;
     border-right: 10px solid goldenrod; border-bottom-right-radius: 10px;
     position: fixed ;z-index: 1; margin-bottom: 40px;
@@ -12,58 +12,160 @@ h1 {color: goldenrod;font-size: 1.8rem; text-align: center; padding-top: 55px;}
 }
 .nav .navegacion{
     width: 100%;
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    list-style: none;
 }
-.nav .navegacion .nav-item {display: flex;}
-.nav-item a{color: goldenrod ;padding: 2px; border-radius: 4px;}
+.nav-item a{
+    color: goldenrod ;
+    padding: 2px;
+    border-radius: 4px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+    
 .nav-item a:hover {
     background-color: goldenrod; color: black;
     border-bottom: 2px solid rgb(69, 69, 69);
     border-left: 2px solid rgb(69, 69, 69);
+    padding: 2px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+/*menu responsive*/
+@media (max-width: 550px) {
+    .nav .navegacion { 
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+}
+    .nav { 
+    width: 70px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 0px;
+    border-right: 0px;
+    text-align: center;
+}
+    .nav-item a{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
 }
 
-.logo {height: 240px; margin-left: 35%; margin-bottom: 50px;}
+.logo {
+    height: 17%;
+    width: 17%;
+    margin-left: 41.5%;
+    margin-bottom: 42px;
+}
 .dorado {color:goldenrod}
 .texto-izq{
-    display: inline-block; width: 53%; margin-left: 12%; margin-right: 1%;}
+    display: inline-block; width: 53%; margin-left: 12%; margin-right: 1%;
+}
+.fn-chico{
+    font-size: 0.7rem;
+}
+/*texto de grupos*/
+.aclaracion{
+    margin-left: 13%;
+    width: 74%;
+}
+@media (max-width: 550px){
+    .aclaracion{
+        text-align: center;
+    }
+}
 .trofeo{
     display: inline-block;}
-.fondo{
-    position: absolute;z-index: -2; top: 0px; left: 0px; width: 100%; height: 200%;}
+
+.fondo1{
+    width: 1280px;
+    height: 720px;
+    }
 .fondo-negro{
-    position: absolute;z-index: -1; width: 78%;
-     margin-left: 11%;top: 0px;background-color: rgb(0, 0, 0);height: 200%;}
+    position: fixed;
+    z-index: -1;
+    width: 78%;
+    margin-left: 11%;
+    top: 0px;
+    background-color: rgb(0, 0, 0,0.607);
+    height: 100%;}
 .fondo-negro-contacto{
-    position: absolute;z-index: -1;
-    width: 50%; margin-left: 25%;top: 0px;
-    background-color: rgb(0, 0, 0);height: 200%;}
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    margin-left: 25%;
+    top: 0px;
+    background-color: rgb(0, 0, 0,0.607);
+    height: 100%;}
+/*fondo responsive*/
+.fondo-mobile{
+    width: 100%;
+    height: 100%;
+    position: fixed ;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+}
+@media (max-width: 1100px){
+.fondo1{ position: relative;
+left: -100px;}
+}
+@media (max-width: 950px){
+    .fondo1{ position: relative;
+    left: -180px;}
+}
+@media (max-width: 850px){
+    .fondo1{ position: relative;
+    left: -275px;}
+}
+@media (max-width: 650px){
+    .fondo1{ position: relative;
+    left: -320px;}
+    }
 .formulario{
-    width: 36%; margin-left: 31%; height:300px; padding-top: 60px;}
+    width: 36%;
+    margin-left: 31%;
+    height:300px;
+    padding-top: 60px;}
 .formulario .form{
-    padding-left: 33%;padding-bottom: 30px
+    padding-left: 33%;
+    padding-bottom: 30px
 }
 .campo{
-    margin-top: 10px;display: block; background-color: rgb(177, 156, 50);color: black; border: 2px solid white; padding: 3px;
-}
+    margin-top: 10px;
+    display: block;
+    background-color: rgb(177, 156, 50);
+    color: black;
+    border: 2px solid white;
+    padding: 3px;}
 .enviar{
     margin-left: 33%;
     width: 174px;
     background-color: rgb(89, 78, 25);
     color: white;
     border: 2px solid yellow;
-    padding: 3px;
-}
+    padding: 3px;}
 .enviar:hover{
     color: black;
     background-color: rgb(185, 157, 0);
     border: 2px solid white;
 }
 .footer{
-    position: relative; bottom: 0px; height: 174px; width: 100%;
-    background-color: rgba(183, 110, 26); z-index: 1;
-    margin-top: 140px; border-top: 4px solid rgb(183, 110, 26);
-    display: flex; align-items: center; justify-content: space-evenly;
+    position: relative;
+    bottom: 0px;
+    height: 174px;
+    width: 100%;
+    background-color: rgba(183, 110, 26);
+    z-index: 1;
+    margin-top: 140px;
+    border-top: 4px solid rgb(183, 110, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .ft-item{
     font-size: 2rem;
@@ -71,79 +173,284 @@ h1 {color: goldenrod;font-size: 1.8rem; text-align: center; padding-top: 55px;}
 .ft-item a{
     color: white;
 }
-.partidos{
-    background-color: aqua;
+.grupos{
     height: 100%;
     width: 70%;
     margin-left: 15%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 80px;
 }
-/*grilla de grupo*/
 .grupo{
-    background-color: greenyellow;
+    border: solid 3px goldenrod;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px;
     height: 130px;
     width: 200px;
     margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+/*grilla de grupo desplegdo*/
 .gp{
+    background-color: goldenrod;
+    width: 100%;
     grid-area: grupo;
     text-align: center;
+    color: black;
 }
 .nombres{
     grid-area: nombres;
     text-align: left;
     padding: 3px;
 }
-.estadisticas{
-    grid-area: estadisticas;
-}
-
-/*.tarjeta{
-    display: flex;
-    flex-direction: column;
-}*/
 .info{
+    grid-area: estadisticas;
     display: grid;
     grid-template-columns:repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
-label i{ font-size: 1.8rem;}
+label i{font-size: 1.6rem;}
+.negro {color: black;}
+.txt-centro{ text-align: center;}
 #grupo-a:checked ~ .inf-a {display:grid;}
-#grupo-a:checked ~ .tarjeta-a {
-    background-color: greenyellow;
+#tarjeta-a:checked ~ .tarjeta-a {
+    transition: all 0.4s;
     height: 130px;
-    width: 300px;
+    width: 420px;
     margin: 4px;
     display: grid;
     grid-template-areas:
     "grupo grupo"
-    "nombres estadisticas estadisticas"
-    "nombres estadisticas estadisticas"
-    "nombres estadisticas estadisticas"
-    "nombres estadisticas estadisticas"
-    "nombres estadisticas estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
     ;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(6, 1fr);
 }
 #grupo-b:checked ~ .inf-b {display:grid;}
+#tarjeta-b:checked ~ .tarjeta-b {
+    transition: all 0.4s;
+    height: 130px;
+    width: 420px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
 #grupo-c:checked ~ .inf-c {display:grid;}
+#tarjeta-c:checked ~ .tarjeta-c {
+    transition: all 0.4s;
+    height: 130px;
+    width: 420px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
 #grupo-d:checked ~ .inf-d {display:grid;}
+#tarjeta-d:checked ~ .tarjeta-d {
+    transition: all 0.4s;
+    height: 130px;
+    width: 420px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
 #grupo-e:checked ~ .inf-e {display:grid;}
+#tarjeta-e:checked ~ .tarjeta-e {
+    transition: all 0.4s;
+    height: 130px;
+    width: 420px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
 #grupo-f:checked ~ .inf-f {display:grid;}
+#tarjeta-f:checked ~ .tarjeta-f {
+    transition: all 0.4s;
+    height: 130px;
+    width: 420px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
 #grupo-g:checked ~ .inf-g {display:grid;}
+#tarjeta-g:checked ~ .tarjeta-g {
+    transition: all 0.4s;
+    height: 130px;
+    width: 420px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
 #grupo-h:checked ~ .inf-h {display:grid;}
+#tarjeta-h:checked ~ .tarjeta-h {
+    transition: all 0.4s;
+    height: 130px;
+    width: 420px;
+    margin: 4px;
+    display: grid;
+    grid-template-areas:
+    "grupo grupo"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    "nombres estadisticas"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+.rondas{
+    margin-left: 13%;
+    width: 74%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    }
+.rnd{
+    width: 50%;
+}
+#octavos:checked ~ .octavos{
+display: block;
+}
+.label {
+    text-align: center;
+}
+#cuartos:checked ~ .cuartos{
+    display: block;
+}
+#semi:checked ~ .semi{
+    display: block;
+}
+#final:checked ~ .final{
+    display: block;
+}
+/*grilla de cruces*/
+.cruce{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25px 1fr 25px 50px;
+    grid-template-areas: 
+    'eq-a eq-b' 
+    'esc-a esc-b'    
+    'ida vuelta'
+    'penales penales';
+    border-bottom: 3px solid rgba(218, 165, 32, 0.486);
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.eq-a{
+    grid-area: eq-a;
+    text-align: center;
+}
+.eq-b{
+    grid-area: eq-b;
+    text-align: center;
+}
+.esc-a{
+    grid-area: esc-a;
+    width: 60px;
+    height: 60px;
+    margin-left: 37%;
+    margin-right: 37%;
+}
+.esc-b{
+    grid-area: esc-b;
+    width: 60px;
+    height: 60px;
+    margin-left: 37%;
+    margin-right: 37%;
+}
+.ida{
+    grid-area: ida;
+    text-align: center;
+}
+.vuelta{
+    grid-area: vuelta;
+    text-align: center;
+}
+.penales{
+    grid-area: penales;
+    text-align: center;
+}
+.crc-final{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25px 1fr;
+    grid-template-areas: 
+    'eq-a trofeo eq-b' 
+    'esc-a res esc-b';
+    margin-top: 10px;
+}    
+
+.res{
+    grid-area: res;
+    text-align: center;
+    margin-top: 16px;
+}
+.bx-trophy{
+    grid-area: trofeo;
+    font-size: 2rem;
+}
 .esconder{ display: none;}
