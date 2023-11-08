@@ -5,10 +5,17 @@ body{font-family: Helvetica, sans-serif;background-color: rgb(0, 0, 0); color :w
 h1 {color: goldenrod;font-size: 1.8rem; text-align: center; padding-top: 55px;}
 .titulo{position: relative;margin-bottom: 50px;}
 .nav{
-    border-bottom: 10px solid goldenrod; width: 550px; height: 40px;
-    border-right: 10px solid goldenrod; border-bottom-right-radius: 10px;
-    position: fixed ;z-index: 1; margin-bottom: 40px;
-    display: flex; align-items: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    border-bottom: 10px solid goldenrod;
+    width: 550px;
+    height: 40px;
+    border-right: 10px solid goldenrod;
+    border-bottom-right-radius: 10px;
+    position: fixed ;
+    z-index: 1;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
 }
 .nav .navegacion{
     width: 100%;
@@ -27,7 +34,8 @@ h1 {color: goldenrod;font-size: 1.8rem; text-align: center; padding-top: 55px;}
 }
     
 .nav-item a:hover {
-    background-color: goldenrod; color: black;
+    background-color: goldenrod;
+    color: black;
     border-bottom: 2px solid rgb(69, 69, 69);
     border-left: 2px solid rgb(69, 69, 69);
     padding: 2px;
@@ -41,7 +49,8 @@ h1 {color: goldenrod;font-size: 1.8rem; text-align: center; padding-top: 55px;}
     align-items: left;
     justify-content: space-around;
 }
-    .nav { 
+    .nav {
+    background-color: rgba(0, 0, 0, 0);
     width: 70px;
     height: 200px;
     flex-direction: column;
@@ -172,6 +181,9 @@ left: -100px;}
 }
 .ft-item a{
     color: white;
+}
+.ft-item a:hover {
+    color: black;
 }
 .grupos{
     height: 100%;
@@ -443,7 +455,6 @@ display: block;
     'esc-a res esc-b';
     margin-top: 10px;
 }    
-
 .res{
     grid-area: res;
     text-align: center;
@@ -452,5 +463,28 @@ display: block;
 .bx-trophy{
     grid-area: trofeo;
     font-size: 2rem;
+}
+.galeria{
+    width: 72%;
+    margin-left: 14%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.foto {
+    width: 200px;
+    height: 100px;
+    border: solid 1px gold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.foto:hover {
+    width: 300px;
+    height: 150px;
+    margin: 0px;
+    border: solid 3px goldenrod;
 }
 .esconder{ display: none;}
