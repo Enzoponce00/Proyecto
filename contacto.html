@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!--mi estilo-->
     <link rel="stylesheet" href="./css/stile.css">
     <title>Contacto</title>
 </head>
@@ -26,13 +32,21 @@
 <div class="fondo-negro-contacto"></div>
 <div class="formulario">
     <form action="" method="post">
-        <div class="form"><label for="nombre">Nombre</label>
-        <input type="text" id="nombre" class="campo" name="nombre" placeholder="Ingrese su nombre" required></div>
-        <div class="form"><label for="correo">Correo Electronico</label>
-        <input type="email" id="correo" class="campo" name="Correo" placeholder="ejemplo@mail.com" required></div>
-        <div class="form"><label for="comentario">Dejanos tu comentario</label>
-        <input type="text" id="comentario" class="campo" name="comentario" placeholder="Opina aquí" required></div>
-        <input type="submit" value="Enviar" class="enviar">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control campo" id="floatingInput" placeholder="Juan Perez">
+            <label for="floatingInput">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control campo" id="floatingInput" placeholder="nombre@ejemplo.com">
+            <label for="floatingInput">Correo electronico</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control campo" placeholder="Deja tu comentario aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Deja tu comentario aquí</label>
+        </div>
+        <div>
+            <input class="btn btn-primary enviar" type="submit" value="Enviar">
+        </div>
     </form>
 </div>
 <footer class="footer">
@@ -49,4 +63,7 @@
         <a href="./contacto.html"><i class='bx bxs-map'></i></a>
     </div>
 </footer>
+<!--bootstrap js-->
+<script src="./js/bootstrap.js"></script>
 </body>
+</html>
