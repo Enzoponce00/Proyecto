@@ -1,69 +1,231 @@
-/* !important >id >class >etiqueta */
-*{margin: 0px; text-decoration: none;}
-
-body{
-    font-family:'Roboto', sans-serif;
-    font-size: 1rem;
-    background-color: rgb(0, 0, 0);
-    color :white;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
+
 h1 {
-    color: goldenrod;
-    font-size: 1.8rem;
-    text-align: center;
-    padding-top: 55px;
-    font-weight: 500;
-    line-height: 1.2;
+  color: goldenrod;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 55px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h1 .titulo {
+  position: relative;
+  margin-bottom: 50px;
 }
 
-.titulo{position: relative;margin-bottom: 50px;}
-.nav{
-    background-color: rgba(0, 0, 0, 0.658);
-    border-bottom: 10px solid goldenrod;
-    width: 550px;
-    height: 40px;
-    border-right: 10px solid goldenrod;
-    border-bottom-right-radius: 10px;
-    position: fixed ;
-    z-index: 1;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
+.nav {
+  background-color: rgba(0, 0, 0, 0.658);
+  border-bottom: 10px solid goldenrod;
+  width: 550px;
+  height: 40px;
+  border-right: 10px solid goldenrod;
+  border-bottom-right-radius: 10px;
+  position: fixed;
+  z-index: 1;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
 }
-.nav .navegacion{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
+.nav .navegacion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
 }
-.nav-item a{
-    color: goldenrod ;
-    padding: 2px;
-    border-radius: 4px;
-    padding-left: 2px;
-    padding-bottom: 2px;
-    text-decoration: none;
+.nav .navegacion .nav-item a {
+  color: goldenrod;
+  padding: 2px;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  text-decoration: none;
 }
-    
-.nav-item a:hover {
-    background-color: goldenrod;
-    color: black;
-    border-bottom: 2px solid rgb(69, 69, 69);
-    border-left: 2px solid rgb(69, 69, 69);
-    padding: 2px;
-    padding-left: 0px;
-    padding-bottom: 0px;
+.nav .navegacion .nav-item a:hover {
+  background-color: goldenrod;
+  color: black;
+  border-bottom: 2px solid rgb(69, 69, 69);
+  border-left: 2px solid rgb(69, 69, 69);
+  padding: 2px;
+  padding-left: 0px;
+  padding-bottom: 0px;
 }
+
+.logo {
+  height: 17%;
+  width: 17%;
+  margin-left: 41.5%;
+  margin-bottom: 42px;
+}
+
+.dorado {
+  color: goldenrod;
+}
+
+.texto-izq {
+  display: inline-block;
+  width: 53%;
+  margin-left: 12%;
+  margin-right: 1%;
+}
+
+.trofeo {
+  display: inline-block;
+}
+
+.fn-chico {
+  font-size: 0.7rem;
+}
+
+.fondo1 {
+  width: 1280px;
+  height: 720px;
+}
+
+.fondo-negro {
+  position: fixed;
+  z-index: -1;
+  width: 78%;
+  margin-left: 11%;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.607);
+  height: 100%;
+}
+
+.fondo-negro-contacto {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  margin-left: 25%;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.607);
+  height: 100%;
+}
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  height: 174px;
+  width: 100%;
+  background-color: rgb(183, 110, 26);
+  z-index: 1;
+  margin-top: 140px;
+  border-top: 4px solid rgb(183, 110, 26);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .ft-item {
+  font-size: 2rem;
+}
+.footer .ft-item a {
+  color: white;
+}
+.footer .ft-item a:hover {
+  color: black;
+}
+
+/*grupos*/
+.grupos {
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.grupos .grupo {
+  border: solid 3px goldenrod;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 130px;
+  width: 200px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grupos .grupo .gp {
+  background-color: goldenrod;
+  width: 100%;
+  grid-area: grupo;
+  text-align: center;
+  color: black;
+}
+.grupos .grupo .gp i {
+  font-size: 1.6rem;
+}
+.grupos .grupo .nombres {
+  grid-area: nombres;
+  text-align: left;
+  padding: 3px;
+}
+.grupos .grupo .info {
+  grid-area: estadisticas;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+/*texto de grupos*/
+.aclaracion {
+  margin-left: 13%;
+  width: 74%;
+}
+
+.campo {
+  margin-top: 10px;
+  display: block;
+  background-color: rgb(177, 156, 50);
+  border: 2px solid white;
+  padding: 3px;
+}
+.campo:focus {
+  background-color: rgb(89, 78, 25);
+  color: white;
+  border: 2px solid yellow;
+}
+
+.enviar {
+  margin-top: 10px;
+  width: 174px;
+  background-color: rgb(89, 78, 25);
+  color: white;
+  border: 2px solid yellow;
+}
+.enviar:hover {
+  color: black;
+  background-color: rgb(185, 157, 0);
+  border: 2px solid white;
+}
+
+.negro {
+  color: black;
+}
+
+.txt-centro {
+  text-align: center;
+}
+
+.esconder {
+  display: none;
+}
+
 /*menu responsive*/
 @media (max-width: 550px) {
-    .nav .navegacion { 
+  .nav .navegacion {
     flex-direction: column;
     align-items: left;
     justify-content: space-around;
-}
-    .nav {
+  }
+  .nav {
     background-color: rgba(0, 0, 0, 0);
     width: 70px;
     height: 200px;
@@ -72,438 +234,50 @@ h1 {
     border-bottom: 0px;
     border-right: 0px;
     text-align: center;
-}
-    .nav-item a{
+  }
+  .nav-item a {
     text-shadow: black 0.1em 0.1em 0.2em;
-    }
+  }
+}
+/*fondo responsive para "cortar" la imagen*/
+.fondo-mobile {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -2;
+  top: 0px;
+  left: 0px;
 }
 
-.logo {
-    height: 17%;
-    width: 17%;
-    margin-left: 41.5%;
-    margin-bottom: 42px;
-}
-.dorado {color:goldenrod}
-.texto-izq{
-    display: inline-block; width: 53%; margin-left: 12%; margin-right: 1%;
-}
-.fn-chico{
-    font-size: 0.7rem;
-}
-/*texto de grupos*/
-.aclaracion{
-    margin-left: 13%;
-    width: 74%;
-}
-@media (max-width: 550px){
-    .aclaracion{
-        text-align: center;
-    }
-}
-.trofeo{
-    display: inline-block;}
-
-.fondo1{
-    width: 1280px;
-    height: 720px;
-    }
-.fondo-negro{
-    position: fixed;
-    z-index: -1;
-    width: 78%;
-    margin-left: 11%;
-    top: 0px;
-    background-color: rgb(0, 0, 0,0.607);
-    height: 100%;}
-.fondo-negro-contacto{
-    position: absolute;
-    z-index: -1;
-    width: 50%;
-    margin-left: 25%;
-    top: 0px;
-    background-color: rgb(0, 0, 0,0.607);
-    height: 100%;}
-/*fondo responsive*/
-.fondo-mobile{
-    width: 100%;
-    height: 100%;
-    position: fixed ;
-    z-index: -2;
-    top: 0px;
-    left: 0px;
-}
-@media (max-width: 1100px){
-.fondo1{ position: relative;
-left: -100px;}
-}
-@media (max-width: 950px){
-    .fondo1{ position: relative;
-    left: -180px;}
-}
-@media (max-width: 850px){
-    .fondo1{ position: relative;
-    left: -275px;}
-}
-@media (max-width: 650px){
-    .fondo1{ position: relative;
-    left: -320px;}
-    }
-.formulario{
-    width: 36%;
-    margin-left: 31%;
-    height:300px;
-    padding-top: 60px;}
-.formulario .form{
-    padding-left: 33%;
-    padding-bottom: 30px
-}
-.campo{
-    margin-top: 10px;
-    display: block;
-    background-color: rgb(177, 156, 50);
-    border: 2px solid white;
-    padding: 3px;
-}
-.campo:focus{
-    background-color: rgb(89, 78, 25);
-    color: white;
-    border: 2px solid yellow;
-}
-.enviar{
-    margin-top: 10px;
-    width: 174px;
-    background-color: rgb(89, 78, 25);
-    color: white;
-    border: 2px solid yellow;
-}
-.enviar:hover{
-    color: black;
-    background-color: rgb(185, 157, 0);
-    border: 2px solid white;
-}
-.footer{
+@media (max-width: 1100px) {
+  .fondo1 {
     position: relative;
-    bottom: 0px;
-    height: 174px;
-    width: 100%;
-    background-color: rgba(183, 110, 26);
-    z-index: 1;
-    margin-top: 140px;
-    border-top: 4px solid rgb(183, 110, 26);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    left: -100px;
+  }
 }
-.ft-item{
-    font-size: 2rem;
+@media (max-width: 950px) {
+  .fondo1 {
+    position: relative;
+    left: -180px;
+  }
 }
-.ft-item a{
-    color: white;
+@media (max-width: 850px) {
+  .fondo1 {
+    position: relative;
+    left: -275px;
+  }
 }
-.ft-item a:hover {
-    color: black;
+@media (max-width: 650px) {
+  .fondo1 {
+    position: relative;
+    left: -320px;
+  }
 }
-.grupos{
-    height: 100%;
-    width: 70%;
-    margin-left: 15%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 80px;
-}
-.grupo{
-    border: solid 3px goldenrod;
-    border-bottom-left-radius: 5px ;
-    border-bottom-right-radius: 5px;
-    height: 130px;
-    width: 200px;
-    margin: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/*grilla de grupo desplegdo*/
-.gp{
-    background-color: goldenrod;
-    width: 100%;
-    grid-area: grupo;
+/*respnsive grupos*/
+@media (max-width: 550px) {
+  .aclaracion {
     text-align: center;
-    color: black;
+  }
 }
-.nombres{
-    grid-area: nombres;
-    text-align: left;
-    padding: 3px;
-}
-.info{
-    grid-area: estadisticas;
-    display: grid;
-    grid-template-columns:repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
-label i{font-size: 1.6rem;}
-.negro {color: black;}
-.txt-centro{ text-align: center;}
-#grupo-a:checked ~ .inf-a {display:grid;}
-#tarjeta-a:checked ~ .tarjeta-a {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-#grupo-b:checked ~ .inf-b {display:grid;}
-#tarjeta-b:checked ~ .tarjeta-b {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-#grupo-c:checked ~ .inf-c {display:grid;}
-#tarjeta-c:checked ~ .tarjeta-c {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-#grupo-d:checked ~ .inf-d {display:grid;}
-#tarjeta-d:checked ~ .tarjeta-d {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-#grupo-e:checked ~ .inf-e {display:grid;}
-#tarjeta-e:checked ~ .tarjeta-e {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-#grupo-f:checked ~ .inf-f {display:grid;}
-#tarjeta-f:checked ~ .tarjeta-f {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-#grupo-g:checked ~ .inf-g {display:grid;}
-#tarjeta-g:checked ~ .tarjeta-g {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-#grupo-h:checked ~ .inf-h {display:grid;}
-#tarjeta-h:checked ~ .tarjeta-h {
-    transition: all 0.4s;
-    height: 130px;
-    width: 420px;
-    margin: 4px;
-    display: grid;
-    grid-template-areas:
-    "grupo grupo"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    "nombres estadisticas"
-    ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-.rondas{
-    margin-left: 13%;
-    width: 74%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    }
-.rnd{
-    width: 50%;
-}
-#octavos:checked ~ .octavos{
-display: block;
-}
-.label {
-    text-align: center;
-}
-#cuartos:checked ~ .cuartos{
-    display: block;
-}
-#semi:checked ~ .semi{
-    display: block;
-}
-#final:checked ~ .final{
-    display: block;
-}
-/*grilla de cruces*/
-.cruce{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 25px 1fr 25px 50px;
-    grid-template-areas: 
-    'eq-a eq-b' 
-    'esc-a esc-b'    
-    'ida vuelta'
-    'penales penales';
-    border-bottom: 3px solid rgba(218, 165, 32, 0.486);
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-.eq-a{
-    grid-area: eq-a;
-    text-align: center;
-}
-.eq-b{
-    grid-area: eq-b;
-    text-align: center;
-}
-.esc-a{
-    grid-area: esc-a;
-    width: 60px;
-    height: 60px;
-    margin-left: 37%;
-    margin-right: 37%;
-}
-.esc-b{
-    grid-area: esc-b;
-    width: 60px;
-    height: 60px;
-    margin-left: 37%;
-    margin-right: 37%;
-}
-.ida{
-    grid-area: ida;
-    text-align: center;
-}
-.vuelta{
-    grid-area: vuelta;
-    text-align: center;
-}
-.penales{
-    grid-area: penales;
-    text-align: center;
-}
-.crc-final{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25px 1fr;
-    grid-template-areas: 
-    'eq-a trofeo eq-b' 
-    'esc-a res esc-b';
-    margin-top: 10px;
-}    
-.res{
-    grid-area: res;
-    text-align: center;
-    margin-top: 16px;
-}
-.bx-trophy{
-    grid-area: trofeo;
-    font-size: 2rem;
-}
-.galeria{
-    width: 78%;
-    margin-left: 11%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.foto {
-    width: 200px;
-    height: 100px;
-    border: solid 1px gold;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-.foto:hover {
-    width: 300px;
-    height: 150px;
-    margin: 0px;
-    border: solid 3px goldenrod;
-}
-.esconder{ display: none;}
+
+/*# sourceMappingURL=stile.css.map */
