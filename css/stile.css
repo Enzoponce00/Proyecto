@@ -1,3 +1,9 @@
+/* !important >id >class >etiqueta */
+* {
+  margin: 0px;
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -124,11 +130,29 @@ h1 .titulo {
 .footer .ft-item {
   font-size: 2rem;
 }
-.footer .ft-item a {
+.footer .ft-item .instagram {
   color: white;
 }
-.footer .ft-item a:hover {
-  color: black;
+.footer .ft-item .instagram:hover {
+  color: #bc2a8d;
+}
+.footer .ft-item .facebook {
+  color: white;
+}
+.footer .ft-item .facebook:hover {
+  color: rgb(24, 28, 242);
+}
+.footer .ft-item .map {
+  color: white;
+}
+.footer .ft-item .map:hover {
+  color: rgb(52, 177, 209);
+}
+.footer .ft-item .youtube {
+  color: white;
+}
+.footer .ft-item .youtube:hover {
+  color: #ff0000;
 }
 
 /*grupos*/
@@ -151,6 +175,7 @@ h1 .titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.4s;
 }
 .grupos .grupo .gp {
   background-color: goldenrod;
@@ -169,7 +194,6 @@ h1 .titulo {
 }
 .grupos .grupo .info {
   grid-area: estadisticas;
-  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
@@ -214,8 +238,296 @@ h1 .titulo {
   text-align: center;
 }
 
-.esconder {
-  display: none;
+.rondas {
+  margin-left: 13%;
+  width: 74%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.rondas .rnd {
+  width: 50%;
+}
+.rondas .rnd .label {
+  text-align: center;
+}
+
+#grupo-a:checked ~ .inf-a {
+  display: grid;
+}
+
+#tarjeta-a:checked ~ .tarjeta-a {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#grupo-b:checked ~ .inf-b {
+  display: grid;
+}
+
+#tarjeta-b:checked ~ .tarjeta-b {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#grupo-c:checked ~ .inf-c {
+  display: grid;
+}
+
+#tarjeta-c:checked ~ .tarjeta-c {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#grupo-d:checked ~ .inf-d {
+  display: grid;
+}
+
+#tarjeta-d:checked ~ .tarjeta-d {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#grupo-e:checked ~ .inf-e {
+  display: grid;
+}
+
+#tarjeta-e:checked ~ .tarjeta-e {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#grupo-f:checked ~ .inf-f {
+  display: grid;
+}
+
+#tarjeta-f:checked ~ .tarjeta-f {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#grupo-g:checked ~ .inf-g {
+  display: grid;
+}
+
+#tarjeta-g:checked ~ .tarjeta-g {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#grupo-h:checked ~ .inf-h {
+  display: grid;
+}
+
+#tarjeta-h:checked ~ .tarjeta-h {
+  height: 130px;
+  width: 420px;
+  margin: 4px;
+  display: grid;
+  grid-template-areas: "grupo grupo" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas" "nombres estadisticas";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#octavos:checked ~ .octavos {
+  display: block;
+}
+
+#cuartos:checked ~ .cuartos {
+  display: block;
+}
+
+#semi:checked ~ .semi {
+  display: block;
+}
+
+#final:checked ~ .final {
+  display: block;
+}
+
+.cruce {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 25px 1fr 25px 50px;
+  grid-template-areas: "eq-a eq-b" "esc-a esc-b" "ida vuelta" "penales penales";
+  border-bottom: 3px solid rgba(218, 165, 32, 0.486);
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.cruce .eq-a {
+  grid-area: eq-a;
+  text-align: center;
+}
+.cruce .eq-b {
+  grid-area: eq-b;
+  text-align: center;
+}
+.cruce .esc-a {
+  grid-area: esc-a;
+  width: 60px;
+  height: 60px;
+  margin-left: 37%;
+  margin-right: 37%;
+}
+.cruce .esc-b {
+  grid-area: esc-b;
+  width: 60px;
+  height: 60px;
+  margin-left: 37%;
+  margin-right: 37%;
+}
+.cruce .ida {
+  grid-area: ida;
+  text-align: center;
+}
+.cruce .vuelta {
+  grid-area: vuelta;
+  text-align: center;
+}
+.cruce .penales {
+  grid-area: penales;
+  text-align: center;
+}
+
+.crc-final {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 25px 1fr;
+  grid-template-areas: "eq-a trofeo eq-b" "esc-a res esc-b";
+  margin-top: 10px;
+}
+.crc-final .eq-a {
+  grid-area: eq-a;
+  text-align: center;
+}
+.crc-final .eq-b {
+  grid-area: eq-b;
+  text-align: center;
+}
+.crc-final .esc-a {
+  grid-area: esc-a;
+  width: 60px;
+  height: 60px;
+  margin-left: 37%;
+  margin-right: 37%;
+}
+.crc-final .esc-b {
+  grid-area: esc-b;
+  width: 60px;
+  height: 60px;
+  margin-left: 37%;
+  margin-right: 37%;
+}
+.crc-final .res {
+  grid-area: res;
+  text-align: center;
+  margin-top: 16px;
+}
+.crc-final .bx-trophy {
+  grid-area: trofeo;
+  font-size: 2rem;
+}
+
+/*galeria*/
+.galeria {
+  width: 78%;
+  margin-left: 11%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.foto {
+  width: 200px;
+  height: 100px;
+  border: solid 1px gold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.foto:hover {
+  transform: scale(1.8);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: solid 3px goldenrod;
+}
+
+.formulario {
+  width: 36%;
+  margin-left: 31%;
+  height: 300px;
+  padding-top: 60px;
+}
+.formulario .form {
+  padding-left: 33%;
+  padding-bottom: 30px;
+}
+
+.campo {
+  margin-top: 10px;
+  display: block;
+  background-color: rgb(177, 156, 50);
+  border: 2px solid white;
+  padding: 3px;
+}
+.campo:focus {
+  background-color: rgb(89, 78, 25);
+  color: white;
+  border: 2px solid yellow;
+}
+
+.enviar {
+  margin-top: 10px;
+  width: 174px;
+  background-color: rgb(89, 78, 25);
+  color: white;
+  border: 2px solid yellow;
+}
+.enviar:hover {
+  color: black;
+  background-color: rgb(185, 157, 0);
+  border: 2px solid white;
 }
 
 /*menu responsive*/
@@ -278,6 +590,9 @@ h1 .titulo {
   .aclaracion {
     text-align: center;
   }
+}
+.esconder {
+  display: none;
 }
 
 /*# sourceMappingURL=stile.css.map */
