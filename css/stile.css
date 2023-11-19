@@ -74,15 +74,15 @@ h1 .titulo {
   color: goldenrod;
 }
 
-.texto-izq {
-  display: inline-block;
-  width: 53%;
-  margin-left: 12%;
-  margin-right: 1%;
+.index {
+  display: flex;
+  width: 74%;
+  margin-left: 13%;
 }
 
 .trofeo {
-  display: inline-block;
+  width: 262px;
+  height: 464px;
 }
 
 .fn-chico {
@@ -429,8 +429,8 @@ h1 .titulo {
 .crc-final {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 25px 1fr;
-  grid-template-areas: "eq-a trofeo eq-b" "esc-a res esc-b";
+  grid-template-rows: 25px 25px 1px;
+  grid-template-areas: "eq-a trofeo eq-b" "esc-a res esc-b" "res-media res-media res-media";
   margin-top: 10px;
 }
 .crc-final .eq-a {
@@ -447,6 +447,7 @@ h1 .titulo {
   height: 60px;
   margin-left: 37%;
   margin-right: 37%;
+  transform: translate(-10px);
 }
 .crc-final .esc-b {
   grid-area: esc-b;
@@ -454,6 +455,7 @@ h1 .titulo {
   height: 60px;
   margin-left: 37%;
   margin-right: 37%;
+  transform: translate(-10px);
 }
 .crc-final .res {
   grid-area: res;
@@ -463,6 +465,11 @@ h1 .titulo {
 .crc-final .bx-trophy {
   grid-area: trofeo;
   font-size: 2rem;
+}
+.crc-final .res-media {
+  grid-area: res-media;
+  display: none;
+  text-align: center;
 }
 
 /*galeria*/
@@ -585,10 +592,82 @@ h1 .titulo {
     left: -320px;
   }
 }
+/*responsive index*/
+@media (max-width: 850px) {
+  .index {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .texto-ind {
+    width: 100%;
+  }
+}
 /*respnsive grupos*/
 @media (max-width: 550px) {
   .aclaracion {
     text-align: center;
+  }
+}
+/*responsive eliminacion*/
+@media (max-width: 750px) {
+  .esc-a {
+    transform: translate(-10px);
+  }
+  .esc-b {
+    transform: translate(-10px);
+  }
+  .crc-final {
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: 25px 1fr 25px;
+  }
+  .crc-final .res-media {
+    display: inline-block;
+  }
+  .escnd-media {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .cruce .esc-a {
+    transform: translate(-17px);
+  }
+  .cruce .esc-b {
+    transform: translate(-17px);
+  }
+  .crc-final .esc-a {
+    transform: translate(-12px);
+  }
+  .crc-final .esc-b {
+    transform: translate(1px);
+  }
+  .crc-final .eq-b {
+    transform: translate(15px);
+  }
+  .crc-final .res-media {
+    transform: translate(8px);
+  }
+  .ida {
+    font-size: 0.8rem;
+  }
+  .vuelta {
+    font-size: 0.8rem;
+  }
+  .penales {
+    font-size: 0.8rem;
+  }
+  .res {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .crc-final .esc-a {
+    transform: translate(-20px);
+  }
+  .crc-final .eq-b {
+    transform: translate(20px);
+  }
+  .crc-final .res-media {
+    transform: translate(9px);
   }
 }
 .esconder {
