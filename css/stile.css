@@ -142,10 +142,10 @@ h1 .titulo {
 .footer .ft-item .facebook:hover {
   color: rgb(24, 28, 242);
 }
-.footer .ft-item .map {
+.footer .ft-item .tw {
   color: white;
 }
-.footer .ft-item .map:hover {
+.footer .ft-item .tw:hover {
   color: rgb(52, 177, 209);
 }
 .footer .ft-item .youtube {
@@ -191,11 +191,6 @@ h1 .titulo {
   grid-area: nombres;
   text-align: left;
   padding: 3px;
-}
-.grupos .grupo .info {
-  grid-area: estadisticas;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
 }
 
 /*texto de grupos*/
@@ -252,6 +247,12 @@ h1 .titulo {
 }
 .rondas .rnd .label {
   text-align: center;
+}
+
+.info, #grupo-h:checked ~ .inf-h, #grupo-g:checked ~ .inf-g, #grupo-f:checked ~ .inf-f, #grupo-e:checked ~ .inf-e, #grupo-d:checked ~ .inf-d, #grupo-c:checked ~ .inf-c, #grupo-b:checked ~ .inf-b, #grupo-a:checked ~ .inf-a {
+  grid-area: estadisticas;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 #grupo-a:checked ~ .inf-a {

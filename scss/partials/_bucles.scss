@@ -1,6 +1,14 @@
+.info{
+    grid-area: estadisticas;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
 @each $letra in a, b, c, d, e, f, g, h,{
     #grupo-#{$letra}{
-        &:checked ~ .inf-#{$letra}{display: grid;}
+        &:checked ~ .inf-#{$letra}{
+            display: grid;
+            @extend .info;
+        }
     }
     #tarjeta-#{$letra}{
         &:checked ~ .tarjeta-#{$letra}{

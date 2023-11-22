@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--iconos-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--animacion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--mi estilo-->
     <link rel="stylesheet" href="./css/stile.css">
     <title>Eliminatoria</title>
@@ -31,12 +34,12 @@
     </header>
 <div class="fondo-mobile"><img src="./img/fondo1.jpg" class="fondo1"></div>
 <div class="fondo-negro"></div>
-<h1>Eliminacion</h1>
+<h1 class="animate__animated animate__zoomIn">Eliminacion</h1>
 <section class="rondas">
     <div class="rnd">
         <input type="checkbox" id="octavos" class="esconder">
         <label for="octavos"> <p class="label">Octavos de Final <i class="bx bxs-chevron-down"></i></p></label>
-        <section class="octavos esconder">
+        <section class="animate__animated animate__fadeIn octavos esconder">
             <div class="cruce">
                 <div class="eq-a">Atl. Nacional</div>
                 <div class="eq-b">Racing</div>
@@ -114,7 +117,7 @@
     <div class="rnd">
         <input type="checkbox" id="cuartos" class="esconder">
         <label for="cuartos"> <p class="label"> Cuartos de Final <i class="bx bxs-chevron-down"></i></p></label>
-        <section class="cuartos esconder">
+        <section class="animate__animated animate__fadeIn cuartos esconder">
             <div class="cruce">
                 <div class="eq-a">Racing</div>
                 <div class="eq-b">Boca</div>
@@ -156,7 +159,7 @@
     <div class="rnd">
         <input type="checkbox" id="semi" class="esconder">
         <label for="semi"><p class="label"> Semi-finales <i class="bx bxs-chevron-down"></i></p></label>
-        <section class="semi esconder">
+        <section class="animate__animated animate__fadeIn semi esconder">
             <div class="cruce">
                 <div class="eq-a">Boca</div>
                 <div class="eq-b">Palmeiras</div>
@@ -175,12 +178,13 @@
                 <div class="vuelta">INT 1 - 2 FLU</div>
                 <div class="penales esconder">No hubo</div>
             </div>
+        </section>
     </div>
     <div class="rnd">
         <input type="checkbox" id="final" class="esconder">
         <label for="final"><p class="label"> Final <i class="bx bxs-chevron-down"></i></p></label>
-        <section class="final esconder">
-        <div class="crc-final">
+        <section class="animate__animated animate__fadeIn final esconder">
+            <div class="crc-final">
             <div class="eq-a">Boca</div>
             <i class="bx bx-trophy dorado txt-centro escnd-media"></i>
             <div class="eq-b dorado">Fluminense</div>
@@ -188,7 +192,8 @@
             <div class="res escnd-media">BOC 1-2 FLU</div>
             <img src="img/fluminense.png" alt="Fluminense" class="esc-b">
             <div class="res-media">BOC 1 - 2 FLU</div>
-        </div>
+            </div>
+        </section>
     </div>
 </section>
 <footer class="footer">
@@ -202,7 +207,7 @@
         <a href="https://www.youtube.com/channel/UClgFf9mS1mZI2D_vo-ZTpmQ" target="_blank" class="youtube"><i class='bx bxl-youtube'></i></a>
     </div>
     <div class="ft-item">
-        <a href="https://x.com/Libertadores?t=cTfkcYyixs6vbttwBqHhsA&s=08" class="map"><i class='bx bxl-twitter'></i></a>
+        <a href="https://x.com/Libertadores?t=cTfkcYyixs6vbttwBqHhsA&s=08" target="_blank" class="tw"><i class='bx bxl-twitter'></i></a>
     </div>
 </footer>
 </body>

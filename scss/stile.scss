@@ -125,7 +125,7 @@ h1 {
                 color: rgb(24, 28, 242);
             }
         }
-        .map{
+        .tw{
             color: white;
             &:hover{
                 color: rgb(52, 177, 209);
@@ -171,11 +171,6 @@ h1 {
             grid-area: nombres;
             text-align: left;
             padding: 3px;
-        }
-        .info{
-            grid-area: estadisticas;
-            grid-template-columns:repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
         }
     }
 }
