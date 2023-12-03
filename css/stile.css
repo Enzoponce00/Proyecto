@@ -544,11 +544,11 @@ h1 .titulo {
   margin-top: 6%;
   margin-bottom: 18%;
 }
-.completar p a {
+.completar .txt-error .a-error {
   color: goldenrod;
   text-decoration: none;
 }
-.completar p a:hover {
+.completar .txt-error .a-error:hover {
   background-color: goldenrod;
   color: black;
   border-radius: 4px;
