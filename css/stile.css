@@ -538,6 +538,22 @@ h1 .titulo {
   border: 2px solid white;
 }
 
+.completar {
+  width: 72%;
+  margin-left: 14%;
+  margin-top: 6%;
+  margin-bottom: 18%;
+}
+.completar p a {
+  color: goldenrod;
+  text-decoration: none;
+}
+.completar p a:hover {
+  background-color: goldenrod;
+  color: black;
+  border-radius: 4px;
+}
+
 /*menu responsive*/
 @media (max-width: 550px) {
   .nav .navegacion {

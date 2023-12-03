@@ -375,5 +375,20 @@ h1 {
         border: 2px solid white;
     }
 }
+.completar{
+    width: 72%;
+    margin-left: 14%;
+    margin-top: 6%;
+    margin-bottom: 18%;
+    p a{
+    color: goldenrod;
+    text-decoration: none;
+        &:hover{
+            background-color: goldenrod;
+            color:black;
+            border-radius: 4px;
+        }
+    }
+}
 @import "./partials/queries";
 .esconder{ display: none;}
