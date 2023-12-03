@@ -30,19 +30,33 @@
 }
 @media (max-width: 1100px){
 .fondo1{ position: relative;
-left: -100px;}
+left: -100px;
+top: -10px;
+}
 }
 @media (max-width: 950px){
-    .fondo1{ position: relative;
-    left: -180px;}
+    .fondo1{
+    position: relative;
+    left: -180px;
+    top: -18px;}
 }
 @media (max-width: 850px){
-    .fondo1{ position: relative;
-    left: -275px;}
+    .fondo1{
+    position: relative;
+    left: -275px;
+    top: -27px;}
 }
 @media (max-width: 650px){
-    .fondo1{ position: relative;
-    left: -320px;}
+    .fondo1{
+    position: relative;
+    left: -320px;
+    top: -32px;}
+}
+@media (max-width: 500px){
+    .fondo1{
+    position: relative;
+    left: -380px;
+    top: -38px;}
 }
 /*responsive index*/
 @media (max-width: 850px){
@@ -101,10 +115,13 @@ left: -100px;}
             transform: translate(8px);
         }
     }
+    .eq-a{font-size: 0.8rem;}
+    .eq-b{font-size: 0.8rem;}
     .ida{font-size: 0.8rem;}
     .vuelta{font-size: 0.8rem;}
     .penales{font-size: 0.8rem;}
     .res{font-size: 0.8rem;}
+    .res-media{font-size: 0.8rem;}
 }
 @media (max-width: 450px){
     .crc-final{
@@ -117,5 +134,25 @@ left: -100px;}
         .res-media{
             transform: translate(9px);
         }
+    }
+    .eq-a{font-size: 0.73rem;}
+    .eq-b{font-size: 0.73rem;}
+    .ida{font-size: 0.73rem;}
+    .vuelta{font-size: 0.73rem;}
+    .penales{font-size: 0.73rem;}
+    .res{font-size: 0.73rem;}
+    .res-media{font-size: 0.73rem;}
+}
+/*responsive contacto*/
+@media (max-width: 800px){
+    .fondo-negro-contacto{
+        width: 68%;
+        margin-left: 16%;
+    }
+}
+@media (max-width: 600px){
+    .fondo-negro-contacto{
+        width: 78%;
+        margin-left: 11%;
     }
 }
